@@ -1,0 +1,74 @@
+<!-- Seite zum Suchen der Daten in der Datenbank -->
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+		<title>AbI Zeugnis Suchen</title>
+	<link rel="stylesheet" href="../css/start.css">
+</head>
+
+
+
+
+<body id="body" style="background-image: url('../bilder/background.jpg');">
+
+
+	<div id="titel">
+		<h1>Ihr ABI Zeugnis Suchen</h1>
+	</div>
+
+	<nav>
+		<a href="../index.html">Abi Zeugnis Speichern</a>
+	</nav>
+
+
+
+
+	<div id="all">
+		<form action="../php/zeugnisausgabe.php" method="post">
+
+
+			<!-- Datenabfrage für die suche nach dem Zeugnis-->
+
+
+			<table id="rightalighn" style="margin: 0px auto; margin-top: 100px;">
+								<img src="../Bilder/lupe.png" widht="200" height="150" alt="bbslogo2">
+
+
+				<tr>
+					<td>
+						<fieldset>
+
+							<h3>Abi Zeugnis Suchen nach:</h3>
+
+							<input type="Text" name="Name" value="" size="" maxlength="20" placeholder="Name" id="Name" required>
+								<br>
+							<input type="Text" name="Nachname" value="" size="" maxlength="20" placeholder="Nachname" id="Nachname" required>
+								<br>
+							<input type="number" name="Schuljahr" value="" size="" maxlength="4" placeholder="  Schuljahr" id="Schuljahr" min="0">
+								<br>
+							<input type="Text" name="Klasse" value="" size="" maxlength="5" placeholder="Klasse" id="KlasseSuchen">
+                                <br>
+                            <input type="Submit" name="" value="Suchen">
+							<input type="reset" value="Löschen">
+
+						</fieldset>
+					</td>
+				</tr>
+            </table>
+		</form>
+
+		<footer id="FooterSuchen">
+			<h4>Präsentiert von Maxi Bergheim und Maxi Kühnlein</h4>
+		</footer>
+
+
+	</div>
+
+
+
+</body>
+
+</html>

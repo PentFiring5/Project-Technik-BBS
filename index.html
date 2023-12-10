@@ -1,0 +1,287 @@
+<!-- Seite zum Hinzufügen der Daten in die Datenbank -->
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<title>AbI Zeugnis Speichern</title>
+	<link rel="stylesheet" href="css/start.css">
+</head>
+
+<body id="body" style="background-image: url('bilder/background.jpg');">
+
+	<div id="titel">
+		<h1>Ihr ABI Zeugnis Speichern</h1>
+	</div>
+
+	<nav>
+		<a href="html/AbiSuche.html">Abi Zeugnis Suchen</a>
+	</nav>
+
+	<div id="all">
+		<form action="php/abispeichern.php" method="post">
+
+
+			<!-- Allgemeine Datenabfrage zum Schüler-->
+
+
+			<table id="linksalighn" style="margin: 0px auto;">
+								<img src="Bilder/write.png" widht="200" height="150" alt="bbslogo2">
+
+
+				<tr>
+					<td>
+						<fieldset>
+
+							<fieldset id="FächerUnterteilung">
+							<h3>Infos zum Schüler:</h3>
+
+								<input type="Text" name="Name" value="" size="" maxlength="20" placeholder="Name" id="Name" required>
+									<br>
+								<input type="Text" name="Nachname" value="" size="" maxlength="20" placeholder="Nachname" id="Nachname" required>
+									<br>
+								<input type="number" name="Schuljahr" value="" size="" maxlength="4" placeholder="  Schuljahr" id="Schuljahr" min="0" required>
+									<br>
+								<input type="Text" name="Klasse" value="" size="" maxlength="5" placeholder="Klasse" id="Klasse" required>
+							</fieldset>
+
+						</fieldset>
+					</td>
+				</tr>
+
+
+<!-- Abfrage der Schülernoten in den jewaligen Fächern und Semestern-->
+
+				<tr>
+					<td>
+						<fieldset>
+							
+							<!--P1-->
+							<fieldset id="FächerUnterteilung">
+								<h3>Profiel / Prüfungsfach 1:</h3>
+
+								<select name="Prüfungsfach1" id="P1-select">
+									<option value="" disabled selected hidden>Wähle dein Prüfungsfach 1 aus</option>
+									<option value="Wirtschaft">Wirtschaft</option>
+									<option value="Wirtschaft International">Wirtschaft International</option>
+									<option value="Mediengestalter">Mediengestalter</option>
+									<option value="Informationstechnik">Informationstechnik</option>
+									<option value="Deutsch">Deutsch</option>
+									<option value="Mathe">Mathe</option>
+									<option value="Biologie">Biologie</option>
+								</select>
+
+								<input type="number" name="P1NoteSe1" value="" size="6" maxlength="2" placeholder="Note Semester 1" min="0" max="15">
+								<input type="number" name="P1NoteSe2" value="" size="6" maxlength="2" placeholder="Note Semester 2" min="0" max="15">
+								<input type="number" name="P1NoteSe3" value="" size="6" maxlength="2" placeholder="Note Semester 3" min="0" max="15">
+								<input type="number" name="P1NoteSe4" value="" size="6" maxlength="2" placeholder="Note Semester 4" min="0" max="15">
+							</fieldset>
+
+
+							<br>
+
+
+							<!--P2-->
+							<fieldset id="FächerUnterteilung">
+								<h3>Prüfungsfach 2:</h3>
+
+								<select name="Prüfungsfach2" id="P2-select">
+									<option value="" disabled selected hidden>Wähle dein Prüfungsfach 2 aus</option>
+									<option value="Wirtschaft International">Wirtschaft International</option>
+									<option value="Wirtschaft">Wirtschaft</option>
+									<option value="Englisch">Englisch</option>
+									<option value="Deutsch">Deutsch</option>
+									<option value="Mathe">Mathe</option>
+									<option value="Biologie">Biologie</option>
+								</select>
+
+								<input type="number" name="P2NoteSe1" value="" size="6" maxlength="2" placeholder="Note Semester 1" min="0" max="15">
+								<input type="number" name="P2NoteSe2" value="" size="6" maxlength="2" placeholder="Note Semester 2" min="0" max="15">
+								<input type="number" name="P2NoteSe3" value="" size="6" maxlength="2" placeholder="Note Semester 3" min="0" max="15">
+								<input type="number" name="P2NoteSe4" value="" size="6" maxlength="2" placeholder="Note Semester 4" min="0" max="15">
+							</fieldset>
+								
+
+							<br>
+								
+
+							<!--P3-->
+							<fieldset id="FächerUnterteilung">
+								<h3>Prüfungsfach 3:</h3>
+
+								<select name="Prüfungsfach3" id="P3-select">
+									<option value="" disabled selected hidden>Wähle dein Prüfungsfach 3 aus</option>
+									<option value="BIF">BIF</option>
+									<option value="BV">BV</option>
+									<option value="Englisch">Englisch</option>
+									<option value="Deutsch">Deutsch</option>
+									<option value="Mathe">Mathe</option>
+									<option value="Biologie">Biologie</option>
+								</select>
+
+								<input type="number" name="P3NoteSe1" value="" size="6" maxlength="2" placeholder="Note Semester 1" min="0" max="15">
+								<input type="number" name="P3NoteSe2" value="" size="6" maxlength="2" placeholder="Note Semester 2" min="0" max="15">
+								<input type="number" name="P3NoteSe3" value="" size="6" maxlength="2" placeholder="Note Semester 3" min="0" max="15">
+								<input type="number" name="P3NoteSe4" value="" size="6" maxlength="2" placeholder="Note Semester 4" min="0" max="15">
+							</fieldset>
+
+
+							<br>
+								
+
+							<!--P4-->
+							<fieldset id="FächerUnterteilung">
+								<h3>Prüfungsfach 4:</h3>
+
+								<select name="Prüfungsfach4" id="P4-select">
+									<option value="" disabled selected hidden>Wähle dein Prüfungsfach 4 aus</option>
+									<option value="BIF">BIF</option>
+									<option value="BV">BV</option>
+									<option value="Englisch">Englisch</option>
+									<option value="Deutsch">Deutsch</option>
+									<option value="Mathe">Mathe</option>
+									<option value="BIO">BIO</option>
+								</select>
+
+								<input type="number" name="P4NoteSe1" value="" size="6" maxlength="2" placeholder="Note Semester 1" min="0" max="15">
+								<input type="number" name="P4NoteSe2" value="" size="6" maxlength="2" placeholder="Note Semester 2" min="0" max="15">
+								<input type="number" name="P4NoteSe3" value="" size="6" maxlength="2" placeholder="Note Semester 3" min="0" max="15">
+								<input type="number" name="P4NoteSe4" value="" size="6" maxlength="2" placeholder="Note Semester 4" min="0" max="15">
+							</fieldset>
+
+
+							<br>
+
+
+							<!--P5-->
+							<fieldset id="FächerUnterteilung">
+								<h3>Prüfungsfach 5:</h3>
+
+								<select name="Prüfungsfach5" id="P5-select">
+									<option value="" disabled selected hidden>Wähle dein Prüfungsfach 5 aus</option>
+									<option value="BIF">BIF</option>
+									<option value="BV">BV</option>
+									<option value="Englisch">Englisch</option>
+									<option value="Deutsch">Deutsch</option>
+									<option value="Mathe">Mathe</option>
+									<option value="Biologie">Biologie</option>
+								</select>
+
+								<input type="number" name="P5NoteSe1" value="" size="6" maxlength="2" placeholder="Note Semester 1" min="0" max="15">
+								<input type="number" name="P5NoteSe2" value="" size="6" maxlength="2" placeholder="Note Semester 2" min="0" max="15">
+								<input type="number" name="P5NoteSe3" value="" size="6" maxlength="2" placeholder="Note Semester 3" min="0" max="15">
+								<input type="number" name="P5NoteSe4" value="" size="6" maxlength="2" placeholder="Note Semester 4" min="0" max="15">
+							</fieldset>
+
+
+							<br>
+
+
+							<!--Wahlpflichtkurs-->
+							<fieldset id="FächerUnterteilung">
+								<h3>Wahlpflichtkurs:</h3>
+
+								<select name="Wahlpflichtkurs" id="P5-select">
+									<option value="" disabled selected hidden>Religion oder Werte und Normen</option>
+									<option value="Werte und Normen">Werte und Normen</option>
+									<option value="Religion">Religion</option>
+								</select>
+
+								<input type="number" name="WahlNoteSe1" value="" size="6" maxlength="2" placeholder="Note Semester 1" id="number1" min="0" max="15">
+								<input type="number" name="WahlNoteSe2" value="" size="6" maxlength="2" placeholder="Note Semester 2" id="number1" min="0" max="15">
+								<input type="number" name="WahlNoteSe3" value="" size="6" maxlength="2" placeholder="Note Semester 3" id="number1" min="0" max="15">
+								<input type="number" name="WahlNoteSe4" value="" size="6" maxlength="2" placeholder="Note Semester 4" id="number1" min="0" max="15">
+							</fieldset>
+
+
+							<br>
+
+
+							<!--Fremdsprache-->
+							<fieldset id="FächerUnterteilung">
+								<h3>Fremdsprache:</h3>
+
+								<select name="Fremdsprache" id="P5-select">
+									<option value="" disabled selected hidden>Wähle eine Fremdsprache aus</option>
+									<option value="Französisch">Französisch</option>
+									<option value="Spanisch">Spanisch</option>
+								</select>
+									
+								<input type="number" name="FremdspracheSe1" value="" size="6" maxlength="2" placeholder="Note Semester 1" id="number1" min="0" max="15">
+								<input type="number" name="FremdspracheSe2" value="" size="6" maxlength="2" placeholder="Note Semester 2" id="number1" min="0" max="15">
+								<input type="number" name="FremdspracheSe3" value="" size="6" maxlength="2" placeholder="Note Semester 3" id="number1" min="0" max="15">
+								<input type="number" name="FremdspracheSe4" value="" size="6" maxlength="2" placeholder="Note Semester 4" id="number1" min="0" max="15">
+							</fieldset>
+
+
+							<br>	
+
+
+							<!--Informationstechnik-->
+							<fieldset id="FächerUnterteilung">
+								<h3>Informationstechnik:</h3>
+
+								<input type="number" name="InformationNoteSe1" value="" size="6" maxlength="2" placeholder="Note Semester 1" id="number1" min="0" max="15">
+								<input type="number" name="InformationNoteSe2" value="" size="6" maxlength="2" placeholder="Note Semester 2" id="number1" min="0" max="15">
+								<input type="number" name="InformationNoteSe3" value="" size="6" maxlength="2" placeholder="Note Semester 3" id="number1" min="0" max="15">
+								<input type="number" name="InformationNoteSe4" value="" size="6" maxlength="2" placeholder="Note Semester 4" id="number1" min="0" max="15">
+							</fieldset>
+
+
+							<br>
+
+
+							<!--Physik-->
+							<fieldset id="FächerUnterteilung">
+								<h3>Physik:</h3>
+
+								<input type="number" name="PhysikNoteSe1" value="" size="6" maxlength="2" placeholder="Note Semester 1" id="number1" min="0" max="15">
+								<input type="number" name="PhysikNoteSe2" value="" size="6" maxlength="2" placeholder="Note Semester 2" id="number1" min="0" max="15">
+								<input type="number" name="PhysikNoteSe3" value="" size="6" maxlength="2" placeholder="Note Semester 3" id="number1" min="0" max="15">
+								<input type="number" name="PhysikNoteSe4" value="" size="6" maxlength="2" placeholder="Note Semester 4" id="number1" min="0" max="15">
+							</fieldset>
+
+
+							<br>
+
+
+							<!--Sport-->
+							<fieldset id="FächerUnterteilung">
+								<h3>Sport:</h3>
+
+								<input type="number" name="SportNoteSe1" value="" size="6" maxlength="2" placeholder="Note Semester 1" id="number1" min="0" max="15">
+								<input type="number" name="SportNoteSe2" value="" size="6" maxlength="2" placeholder="Note Semester 2" id="number1" min="0" max="15">
+								<input type="number" name="SportNoteSe3" value="" size="6" maxlength="2" placeholder="Note Semester 3" id="number1" min="0" max="15">
+								<input type="number" name="SportNoteSe4" value="" size="6" maxlength="2" placeholder="Note Semester 4" id="number1" min="0" max="15">
+							</fieldset>
+
+
+							<br>
+							<br>
+
+							<input type="Submit" name="" value="Abschicken">
+							<input type="reset" value="Löschen">
+
+						</fieldset>
+					</td>
+				</tr>
+
+
+
+			</table>
+		</form>
+
+
+	<footer>
+		<h4>Präsentiert von Maxi Bergheim und Maxi Kühnlein</h4>
+	</footer>
+
+
+	</div>
+
+
+
+</body>
+
+</html>
