@@ -78,7 +78,7 @@
 
 
 <div>
-    <h5><b>Ergebnis:</b></h5>
+
     <table border="1">
 
         <?php
