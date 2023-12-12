@@ -2,11 +2,11 @@
 <head>
 <title>PHP-Skript f&uuml;r eine Suchmaschine</title>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../css/start.css">
+<link rel="stylesheet" href="../css/ZeugnisAudsgabe.css">
 </head>
-<!--<body style="background-image: url('../bilder/background.jpg');"-->
+<body style="background-image: url('../bilder/background.jpg');">
 
-<body>
+
 
     <div id="titel">
 		<h1>Dein Abizeugnis</h1>
@@ -74,7 +74,8 @@
         
     ?>
 
-<!-- Ausgabe HTML Tabelle -->
+<!--Ausgabe HTML Tabelle-->
+
 
 <div>
     <h5><b>Ergebnis:</b></h5>
@@ -236,7 +237,8 @@
     <?php
         //Ausgabe aller Werte + Durchschnitte + Unterkurse + Abitur bestanden ja oder nein
 
-        echo 'Name:  '.$Name;
+        /*
+        .$Name;
         echo '<br>';
         echo 'Nachname:  '.$Nachname;
         echo '<br>';
@@ -391,7 +393,650 @@
         echo 'Anzahl Unterkurse:  '.$unterkurse;
         echo '<br><br>';
         echo 'Sie haben Ihr Abitur  '.$Unterkurseausgabe;
+        */
     ?>
+
+    <div class="container">
+    <div class="title">
+        <h2><u>Abi Zeugnis</u></h2>
+    </div>
+    <div class="details-clearfix">
+        <div class="student-details">
+            <strong>Name:</strong><?php echo $Name;?><br>
+            <strong>Nachname:</strong><?php echo $Nachname;?><br>
+			<strong>Klasse:</strong><?php echo $Klasse;?><br>
+        </div>
+        <div class="certificate-details">
+            <strong>Schüler-ID:</strong><?php echo $SusNr;?><br>
+            <strong>Schwerpunkt:</strong><?php echo $Prüfungsfach1;?><br>
+			<strong>Schuljahr:</strong><?php echo $Schuljahr;?><br>
+        </div>
+    </div>
+
+    <h2>Noten</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Fach</th>
+                <th>Punkte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>P1:</th>
+                <td><?php echo $Prüfungsfach1;?></td><!--FAch-->
+                <td><?php echo $P1Durch;?></td><!--Punkte-->
+            </tr>
+            <tr>
+                <th>P2:</th>
+                <td><?php echo $Prüfungsfach2;?></td>
+                <td><?php echo $P2Durch;?></td>
+            </tr>
+            <tr>
+                <th>P3:</th>
+                <td><?php echo $Prüfungsfach3;?></td>
+                <td><?php echo $P3Durch;?></td>
+            </tr>
+            <tr>
+                <th>P4:</th>
+                <td><?php echo $Prüfungsfach4;?></td>
+                <td><?php echo $P4Durch;?></td>
+            </tr>
+            <tr>
+                <th>P5:</th>
+                <td><?php echo $Prüfungsfach5;?></td>
+                <td><?php echo $P5Durch;?></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Fach</th>
+                <th>Punkte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><?php echo $Fremdsprache;?></td>
+                <td><?php echo $FremdDurch;?></td><!--FAch-->
+            </tr>
+            <tr>
+                <td><?php echo $Wahlpflichtkurs;?></td>
+                <td><?php echo $WahlDurch;?></td>
+
+            </tr>
+            <tr>
+                <td>Informationstechnik:</td>
+                <td><?php echo $InfoDurch;?></td>
+ 
+            </tr>
+            <tr>
+                <td>Sport:</td>
+                <td><?php echo $SportDurch;?></td>
+
+            </tr>
+            <tr>
+                <td>Physik:</td>
+                <td><?php echo $PhysikDurch;?></td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Gesamt Durchschnitt:</th>
+                <td><?php echo $GesamtDurch;?></td>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Anzahl Unterkurse:</th>
+                <td><?php echo $unterkurse;?></td>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+
+    <h3><?php echo 'Sie haben Ihr Abitur '.$Unterkurseausgabe;?></h3>
+
+
+
+    <div class="footer">
+        <img src="../bilder/Notentabelle.png" widht="200" height="70" alt="bbslogo2">
+    </div>
+</div>
+
+<br>
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="title">
+        <h2><u>1 Semester</u></h2>
+    </div>
+    <div class="details-clearfix">
+        <div class="student-details">
+            <strong>Name:</strong><?php echo $Name;?><br>
+            <strong>Nachname:</strong><?php echo $Nachname;?><br>
+			<strong>Klasse:</strong><?php echo $Klasse;?><br>
+        </div>
+        <div class="certificate-details">
+            <strong>Schüler-ID:</strong><?php echo $SusNr;?><br>
+            <strong>Schwerpunkt:</strong><?php echo $Prüfungsfach1;?><br>
+			<strong>Schuljahr:</strong><?php echo $Schuljahr;?><br>
+        </div>
+    </div>
+
+    <h2>Noten</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Fach</th>
+                <th>Punkte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>P1:</th>
+                <td><?php echo $Prüfungsfach1;?></td><!--FAch-->
+                <td><?php echo $P1NoteSe1;?></td><!--Punkte-->
+            </tr>
+            <tr>
+                <th>P2:</th>
+                <td><?php echo $Prüfungsfach2;?></td>
+                <td><?php echo $P2NoteSe1;?></td>
+            </tr>
+            <tr>
+                <th>P3:</th>
+                <td><?php echo $Prüfungsfach3;?></td>
+                <td><?php echo $P3NoteSe1;?></td>
+            </tr>
+            <tr>
+                <th>P4:</th>
+                <td><?php echo $Prüfungsfach4;?></td>
+                <td><?php echo $P4NoteSe1;?></td>
+            </tr>
+            <tr>
+                <th>P5:</th>
+                <td><?php echo $Prüfungsfach5;?></td>
+                <td><?php echo $P5NoteSe1;?></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Fach</th>
+                <th>Punkte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><?php echo $Fremdsprache;?></td>
+                <td><?php echo $FremdspracheSe1;?></td><!--FAch-->
+            </tr>
+            <tr>
+                <td><?php echo $Wahlpflichtkurs;?></td>
+                <td><?php echo $WahlNoteSe1;?></td>
+
+            </tr>
+            <tr>
+                <td>Informationstechnik:</td>
+                <td><?php echo $InformationNoteSe1;?></td>
+ 
+            </tr>
+            <tr>
+                <td>Sport:</td>
+                <td><?php echo $SportNoteSe1;?></td>
+
+            </tr>
+            <tr>
+                <td>Physik:</td>
+                <td><?php echo $PhysikNoteSe1;?></td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Durchschnitt:</th>
+                <td>wawfawf</td>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Unterkurse:</th>
+                <td>wawfawf</td>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+
+
+    <div class="footer">
+        <img src="../bilder/Notentabelle.png" widht="200" height="70" alt="bbslogo2">
+    </div>
+</div>
+
+<br>
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="title">
+        <h2><u>2 Semester</u></h2>
+    </div>
+    <div class="details-clearfix">
+        <div class="student-details">
+            <strong>Name:</strong><?php echo $Name;?><br>
+            <strong>Nachname:</strong><?php echo $Nachname;?><br>
+			<strong>Klasse:</strong><?php echo $Klasse;?><br>
+        </div>
+        <div class="certificate-details">
+            <strong>Schüler-ID:</strong><?php echo $SusNr;?><br>
+            <strong>Schwerpunkt:</strong><?php echo $Prüfungsfach1;?><br>
+			<strong>Schuljahr:</strong><?php echo $Schuljahr;?><br>
+        </div>
+    </div>
+
+    <h2>Noten</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Fach</th>
+                <th>Punkte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>P1:</th>
+                <td><?php echo $Prüfungsfach1;?></td><!--FAch-->
+                <td><?php echo $P1NoteSe2;?></td><!--Punkte-->
+            </tr>
+            <tr>
+                <th>P2:</th>
+                <td><?php echo $Prüfungsfach2;?></td>
+                <td><?php echo $P2NoteSe2;?></td>
+            </tr>
+            <tr>
+                <th>P3:</th>
+                <td><?php echo $Prüfungsfach3;?></td>
+                <td><?php echo $P3NoteSe2;?></td>
+            </tr>
+            <tr>
+                <th>P4:</th>
+                <td><?php echo $Prüfungsfach4;?></td>
+                <td><?php echo $P4NoteSe2;?></td>
+            </tr>
+            <tr>
+                <th>P5:</th>
+                <td><?php echo $Prüfungsfach5;?></td>
+                <td><?php echo $P5NoteSe2;?></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Fach</th>
+                <th>Punkte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><?php echo $Fremdsprache;?></td>
+                <td><?php echo $FremdspracheSe2;?></td><!--FAch-->
+            </tr>
+            <tr>
+                <td><?php echo $Wahlpflichtkurs;?></td>
+                <td><?php echo $WahlNoteSe2;?></td>
+
+            </tr>
+            <tr>
+                <td>Informationstechnik:</td>
+                <td><?php echo $InformationNoteSe2;?></td>
+ 
+            </tr>
+            <tr>
+                <td>Sport:</td>
+                <td><?php echo $SportNoteSe2;?></td>
+
+            </tr>
+            <tr>
+                <td>Physik:</td>
+                <td><?php echo $PhysikNoteSe2;?></td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Durchschnitt:</th>
+                <td>wawfawf</td>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Unterkurse:</th>
+                <td>wawfawf</td>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+
+
+    <div class="footer">
+        <img src="../bilder/Notentabelle.png" widht="200" height="70" alt="bbslogo2">
+    </div>
+</div>
+
+
+
+
+
+
+<br>
+
+<div class="container">
+    <div class="title">
+        <h2><u>3 Semester</u></h2>
+    </div>
+    <div class="details-clearfix">
+        <div class="student-details">
+            <strong>Name:</strong><?php echo $Name;?><br>
+            <strong>Nachname:</strong><?php echo $Nachname;?><br>
+			<strong>Klasse:</strong><?php echo $Klasse;?><br>
+        </div>
+        <div class="certificate-details">
+            <strong>Schüler-ID:</strong><?php echo $SusNr;?><br>
+            <strong>Schwerpunkt:</strong><?php echo $Prüfungsfach1;?><br>
+			<strong>Schuljahr:</strong><?php echo $Schuljahr;?><br>
+        </div>
+    </div>
+
+    <h2>Noten</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Fach</th>
+                <th>Punkte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>P1:</th>
+                <td><?php echo $Prüfungsfach1;?></td><!--FAch-->
+                <td><?php echo $P1NoteSe3;?></td><!--Punkte-->
+            </tr>
+            <tr>
+                <th>P2:</th>
+                <td><?php echo $Prüfungsfach2;?></td>
+                <td><?php echo $P2NoteSe3;?></td>
+            </tr>
+            <tr>
+                <th>P3:</th>
+                <td><?php echo $Prüfungsfach3;?></td>
+                <td><?php echo $P3NoteSe3;?></td>
+            </tr>
+            <tr>
+                <th>P4:</th>
+                <td><?php echo $Prüfungsfach4;?></td>
+                <td><?php echo $P4NoteSe3;?></td>
+            </tr>
+            <tr>
+                <th>P5:</th>
+                <td><?php echo $Prüfungsfach5;?></td>
+                <td><?php echo $P5NoteSe3;?></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Fach</th>
+                <th>Punkte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><?php echo $Fremdsprache;?></td>
+                <td><?php echo $FremdspracheSe3;?></td><!--FAch-->
+            </tr>
+            <tr>
+                <td><?php echo $Wahlpflichtkurs;?></td>
+                <td><?php echo $WahlNoteSe3;?></td>
+
+            </tr>
+            <tr>
+                <td>Informationstechnik:</td>
+                <td><?php echo $InformationNoteSe3;?></td>
+ 
+            </tr>
+            <tr>
+                <td>Sport:</td>
+                <td><?php echo $SportNoteSe3;?></td>
+
+            </tr>
+            <tr>
+                <td>Physik:</td>
+                <td><?php echo $PhysikNoteSe3;?></td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Durchschnitt:</th>
+                <td>wawfawf</td>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Unterkurse:</th>
+                <td>wawfawf</td>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+
+
+    <div class="footer">
+        <img src="../bilder/Notentabelle.png" widht="200" height="70" alt="bbslogo2">
+    </div>
+</div>
+
+
+
+
+<br>
+
+<div class="container">
+    <div class="title">
+        <h2><u>4 Semester</u></h2>
+    </div>
+    <div class="details-clearfix">
+        <div class="student-details">
+            <strong>Name: </strong><?php echo $Name;?><br>
+            <strong>Nachname: </strong><?php echo $Nachname;?><br>
+			<strong>Klasse: </strong><?php echo $Klasse;?><br>
+        </div>
+        <div class="certificate-details">
+            <strong>Schüler-ID: </strong><?php echo $SusNr;?><br>
+            <strong>Schwerpunkt: </strong><?php echo $Prüfungsfach1;?><br>
+			<strong>Schuljahr: </strong><?php echo $Schuljahr;?><br>
+        </div>
+    </div>
+
+    <h2>Noten</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Fach</th>
+                <th>Punkte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>P1:</th>
+                <td><?php echo $Prüfungsfach1;?></td><!--FAch-->
+                <td><?php echo $P1NoteSe4;?></td><!--Punkte-->
+            </tr>
+            <tr>
+                <th>P2:</th>
+                <td><?php echo $Prüfungsfach2;?></td>
+                <td><?php echo $P2NoteSe4;?></td>
+            </tr>
+            <tr>
+                <th>P3:</th>
+                <td><?php echo $Prüfungsfach3;?></td>
+                <td><?php echo $P3NoteSe4;?></td>
+            </tr>
+            <tr>
+                <th>P4:</th>
+                <td><?php echo $Prüfungsfach4;?></td>
+                <td><?php echo $P4NoteSe4;?></td>
+            </tr>
+            <tr>
+                <th>P5:</th>
+                <td><?php echo $Prüfungsfach5;?></td>
+                <td><?php echo $P5NoteSe4;?></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Fach</th>
+                <th>Punkte</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><?php echo $Fremdsprache;?></td>
+                <td><?php echo $FremdspracheSe4;?></td><!--FAch-->
+            </tr>
+            <tr>
+                <td><?php echo $Wahlpflichtkurs;?></td>
+                <td><?php echo $WahlNoteSe4;?></td>
+
+            </tr>
+            <tr>
+                <td>Informationstechnik:</td>
+                <td><?php echo $InformationNoteSe4;?></td>
+ 
+            </tr>
+            <tr>
+                <td>Sport:</td>
+                <td><?php echo $SportNoteSe4;?></td>
+
+            </tr>
+            <tr>
+                <td>Physik:</td>
+                <td><?php echo $PhysikNoteSe4;?></td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Durchschnitt:</th>
+                <td>wawfawf</td>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Unterkurse:</th>
+                <td>wawfawf</td>
+            </tr>
+        </thead>
+        </tbody>
+    </table>
+
+
+    <div class="footer">
+        <img src="../bilder/Notentabelle.png" widht="200" height="70" alt="bbslogo2">
+    </div>
+</div>
+
+
+
 
     <footer>
             <h4>Präsentiert von Maxi Bergheim und Maxi Kühnlein</h4>
