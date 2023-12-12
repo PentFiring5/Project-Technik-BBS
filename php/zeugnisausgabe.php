@@ -431,17 +431,18 @@
     </div>
     <div class="details-clearfix">
         <div class="student-details">
-            <strong>Name:</strong><?php echo $Name;?><br>
-            <strong>Nachname:</strong><?php echo $Nachname;?><br>
-			<strong>Klasse:</strong><?php echo $Klasse;?><br>
+            <strong>Name: </strong><?php echo $Name;?><br>
+            <strong>Nachname: </strong><?php echo $Nachname;?><br>
+			<strong>Klasse:  </strong><?php echo $Klasse;?><br>
         </div>
         <div class="certificate-details">
-            <strong>Schüler-ID:</strong><?php echo $SusNr;?><br>
-            <strong>Schwerpunkt:</strong><?php echo $Prüfungsfach1;?><br>
-			<strong>Schuljahr:</strong><?php echo $Schuljahr;?><br>
+            <strong>Schüler-ID:  </strong><?php echo $SusNr;?><br>
+            <strong>Schwerpunkt: </strong><?php echo $Prüfungsfach1;?><br>
+			<strong>Schuljahr: </strong><?php echo $Schuljahr;?><br>
         </div>
     </div>
 
+    <hr>
     <h2>Noten</h2>
 
     <table>
@@ -564,17 +565,18 @@
     </div>
     <div class="details-clearfix">
         <div class="student-details">
-            <strong>Name:</strong><?php echo $Name;?><br>
-            <strong>Nachname:</strong><?php echo $Nachname;?><br>
-			<strong>Klasse:</strong><?php echo $Klasse;?><br>
+            <strong>Name: </strong><?php echo $Name;?><br>
+            <strong>Nachname: </strong><?php echo $Nachname;?><br>
+			<strong>Klasse: </strong><?php echo $Klasse;?><br>
         </div>
         <div class="certificate-details">
-            <strong>Schüler-ID:</strong><?php echo $SusNr;?><br>
-            <strong>Schwerpunkt:</strong><?php echo $Prüfungsfach1;?><br>
-			<strong>Schuljahr:</strong><?php echo $Schuljahr;?><br>
+            <strong>Schüler-ID: </strong><?php echo $SusNr;?><br>
+            <strong>Schwerpunkt: </strong><?php echo $Prüfungsfach1;?><br>
+			<strong>Schuljahr: </strong><?php echo $Schuljahr;?><br>
         </div>
     </div>
-
+    
+    <hr>
     <h2>Noten</h2>
 
     <table>
@@ -661,18 +663,7 @@
         </tbody>
     </table>
 
-    <br>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Unterkurse:</th>
-                <td>wawfawf</td>
-            </tr>
-        </thead>
-        </tbody>
-    </table>
-
+    
 
     <div class="footer">
         <img src="../bilder/Notentabelle.png" widht="200" height="70" alt="bbslogo2">
@@ -694,17 +685,18 @@
     </div>
     <div class="details-clearfix">
         <div class="student-details">
-            <strong>Name:</strong><?php echo $Name;?><br>
-            <strong>Nachname:</strong><?php echo $Nachname;?><br>
-			<strong>Klasse:</strong><?php echo $Klasse;?><br>
+            <strong>Name: </strong><?php echo $Name;?><br>
+            <strong>Nachname: </strong><?php echo $Nachname;?><br>
+			<strong>Klasse: </strong><?php echo $Klasse;?><br>
         </div>
         <div class="certificate-details">
-            <strong>Schüler-ID:</strong><?php echo $SusNr;?><br>
-            <strong>Schwerpunkt:</strong><?php echo $Prüfungsfach1;?><br>
-			<strong>Schuljahr:</strong><?php echo $Schuljahr;?><br>
+            <strong>Schüler-ID: </strong><?php echo $SusNr;?><br>
+            <strong>Schwerpunkt: </strong><?php echo $Prüfungsfach1;?><br>
+			<strong>Schuljahr: </strong><?php echo $Schuljahr;?><br>
         </div>
     </div>
-
+    
+    <hr>
     <h2>Noten</h2>
 
     <table>
@@ -764,7 +756,7 @@
             <tr>
                 <td>Informationstechnik:</td>
                 <td><?php echo $InformationNoteSe2;?></td>
- 
+
             </tr>
             <tr>
                 <td>Sport:</td>
@@ -791,18 +783,6 @@
         </tbody>
     </table>
 
-    <br>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Unterkurse:</th>
-                <td>wawfawf</td>
-            </tr>
-        </thead>
-        </tbody>
-    </table>
-
 
     <div class="footer">
         <img src="../bilder/Notentabelle.png" widht="200" height="70" alt="bbslogo2">
@@ -822,17 +802,18 @@
     </div>
     <div class="details-clearfix">
         <div class="student-details">
-            <strong>Name:</strong><?php echo $Name;?><br>
-            <strong>Nachname:</strong><?php echo $Nachname;?><br>
-			<strong>Klasse:</strong><?php echo $Klasse;?><br>
+            <strong>Name: </strong><?php echo $Name;?><br>
+            <strong>Nachname: </strong><?php echo $Nachname;?><br>
+			<strong>Klasse: </strong><?php echo $Klasse;?><br>
         </div>
         <div class="certificate-details">
-            <strong>Schüler-ID:</strong><?php echo $SusNr;?><br>
-            <strong>Schwerpunkt:</strong><?php echo $Prüfungsfach1;?><br>
-			<strong>Schuljahr:</strong><?php echo $Schuljahr;?><br>
+            <strong>Schüler-ID: </strong><?php echo $SusNr;?><br>
+            <strong>Schwerpunkt: </strong><?php echo $Prüfungsfach1;?><br>
+			<strong>Schuljahr: </strong><?php echo $Schuljahr;?><br>
         </div>
     </div>
-
+    
+    <hr>
     <h2>Noten</h2>
 
     <table>
@@ -919,18 +900,6 @@
         </tbody>
     </table>
 
-    <br>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Unterkurse:</th>
-                <td>wawfawf</td>
-            </tr>
-        </thead>
-        </tbody>
-    </table>
-
 
     <div class="footer">
         <img src="../bilder/Notentabelle.png" widht="200" height="70" alt="bbslogo2">
@@ -959,7 +928,8 @@
 			<strong>Schuljahr: </strong><?php echo $Schuljahr;?><br>
         </div>
     </div>
-
+    
+    <hr>
     <h2>Noten</h2>
 
     <table>
@@ -1041,18 +1011,6 @@
             <tr>
                 <th>Durchschnitt:</th>
                 <td><?php echo $GesamtDurchSe4;?></td>
-            </tr>
-        </thead>
-        </tbody>
-    </table>
-
-    <br>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Unterkurse:</th>
-                <td>wawfawf</td>
             </tr>
         </thead>
         </tbody>
