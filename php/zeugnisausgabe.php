@@ -206,13 +206,41 @@
 
             
 
+
+
+
+            //Berechnung Gesammtdurchschnittes aus allen semestern zusammen
             $gesamtDurchschnitt = $P1NoteSe1+$P1NoteSe2+$P1NoteSe3+$P1NoteSe4+ $P2NoteSe1+$P2NoteSe2+$P2NoteSe3+$P2NoteSe4+ $P3NoteSe1+$P3NoteSe2+$P3NoteSe3+$P3NoteSe4+ $P4NoteSe1+$P4NoteSe2+$P4NoteSe3+$P4NoteSe4+ $P5NoteSe1+$P5NoteSe2+$P5NoteSe3+$P5NoteSe4+ $WahlNoteSe1+$WahlNoteSe2+$WahlNoteSe3+$WahlNoteSe4+ $InformationNoteSe1+$InformationNoteSe2+$InformationNoteSe3+$InformationNoteSe4+ $PhysikNoteSe1+$PhysikNoteSe2+$PhysikNoteSe3+$PhysikNoteSe4+ $SportNoteSe1+$SportNoteSe2+$SportNoteSe3+$SportNoteSe4;  
             $GesamtDurch= $gesamtDurchschnitt/40; //GesamtDurchschnitt auß allen eingegbenen Noten und geteilt durch 40 die Anzahl aller eingegebener Zahlen.
-    
+            
+
+
+
+
+            //Berechnung des Gesamt Durchschnittes für jedes Semester im einzelnen
+            $gesamtDurchschnittSe1 = $P1NoteSe1+$P2NoteSe1+$P3NoteSe1+$P4NoteSe1+$P5NoteSe1+$WahlNoteSe1+$InformationNoteSe1+$PhysikNoteSe1+$SportNoteSe1;
+            $GesamtDurchSe1= $gesamtDurchschnittSe1/9;
+
+            $gesamtDurchschnittSe2 = $P1NoteSe2+$P2NoteSe2+$P3NoteSe2+$P4NoteSe2+$P5NoteSe2+$WahlNoteSe2+$InformationNoteSe2+$PhysikNoteSe2+$SportNoteSe2;
+            $GesamtDurchSe2= $gesamtDurchschnittSe2/9;
+
+            $gesamtDurchschnittSe3 = $P1NoteSe3+$P2NoteSe3+$P3NoteSe3+$P4NoteSe3+$P5NoteSe3+$WahlNoteSe3+$InformationNoteSe3+$PhysikNoteSe3+$SportNoteSe3;
+            $GesamtDurchSe3= $gesamtDurchschnittSe3/9;
+
+            $gesamtDurchschnittSe4 = $P1NoteSe4+$P2NoteSe4+$P3NoteSe4+$P4NoteSe4+$P5NoteSe4+$WahlNoteSe4+$InformationNoteSe4+$PhysikNoteSe4+$SportNoteSe4;
+            $GesamtDurchSe4= $gesamtDurchschnittSe4/9;
+
+
+
+
+
             
             //Ausgabe der Unterkursanzahl -- Ausgenommen sind die Fächer Informationstechnik, Sprache, Physik da diese nur alternativ nach Profil benotet werden
             $unterkurse = $inhalt['Unterkurse'];
             
+
+
+
             //Textausgabe Abitur bestanden -- nicht bestanden
             if ($unterkurse > 7 || $GesamtDurch<5){
                 $Unterkurseausgabe="nicht bestanden";
@@ -235,7 +263,7 @@
 
     
     <?php
-        //Ausgabe aller Werte + Durchschnitte + Unterkurse + Abitur bestanden ja oder nein
+        //Ausgabe aller Werte + Durchschnitte + Unterkurse + Abitur bestanden ja oder nein zur Kontrolle
 
         /*
         .$Name;
@@ -396,6 +424,7 @@
         */
     ?>
 
+<!--Abiturzeugnis Ausgabe, alle Noten die hier angezeigt werden sind der berechnete durchschnitt aus allen 4 Semestern zusammen-->
     <div class="container">
     <div class="title">
         <h2><u>Abi Zeugnis</u></h2>
@@ -520,15 +549,15 @@
     </div>
 </div>
 
+
+
+
 <br>
 
 
 
 
-
-
-
-
+<!--Zeugnisausgabe Semester 1-->
 <div class="container">
     <div class="title">
         <h2><u>1 Semester</u></h2>
@@ -626,7 +655,7 @@
         <thead>
             <tr>
                 <th>Durchschnitt:</th>
-                <td>wawfawf</td>
+                <td><?php echo $GesamtDurchSe1;?></td>
             </tr>
         </thead>
         </tbody>
@@ -650,16 +679,15 @@
     </div>
 </div>
 
+
+
+
 <br>
 
 
 
 
-
-
-
-
-
+<!--Zeugnisausgabe Semester 2-->
 <div class="container">
     <div class="title">
         <h2><u>2 Semester</u></h2>
@@ -757,7 +785,7 @@
         <thead>
             <tr>
                 <th>Durchschnitt:</th>
-                <td>wawfawf</td>
+                <td><?php echo $GesamtDurchSe2;?></td>
             </tr>
         </thead>
         </tbody>
@@ -782,12 +810,12 @@
 </div>
 
 
-
-
-
-
 <br>
 
+
+
+
+<!--Zeugnisausgabe Semester 3-->
 <div class="container">
     <div class="title">
         <h2><u>3 Semester</u></h2>
@@ -885,7 +913,7 @@
         <thead>
             <tr>
                 <th>Durchschnitt:</th>
-                <td>wawfawf</td>
+                <td><?php echo $GesamtDurchSe3;?></td>
             </tr>
         </thead>
         </tbody>
@@ -910,10 +938,11 @@
 </div>
 
 
-
-
 <br>
 
+
+
+<!--Zeugnisausgabe Semester 4-->
 <div class="container">
     <div class="title">
         <h2><u>4 Semester</u></h2>
@@ -1011,7 +1040,7 @@
         <thead>
             <tr>
                 <th>Durchschnitt:</th>
-                <td>wawfawf</td>
+                <td><?php echo $GesamtDurchSe4;?></td>
             </tr>
         </thead>
         </tbody>
