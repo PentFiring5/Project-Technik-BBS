@@ -255,8 +255,8 @@
             }
         }
         else {
-            //echo "Zu Ihrer Eingabe wurde kein Datensatz gefunden.";
-
+            
+            echo '<meta http-equiv="refresh" content="0; URL=../html/NoEntry.html">';
         }
         
         mysqli_close ($verbindung);

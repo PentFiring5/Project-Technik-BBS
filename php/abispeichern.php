@@ -463,9 +463,6 @@
 
 
             }
-            else {
-                echo "Die Eingabe ist leer. Es wurde kein Datensatz hinzugefügt";
-            }
         
         ?>
 
