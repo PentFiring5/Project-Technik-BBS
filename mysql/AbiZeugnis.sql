@@ -70,3 +70,6 @@ CREATE TABLE Schueler(
 
 	primary key (SuSNr)
 	);
+
+INSERT INTO Schueler ( SuSNr, name1, Nachname, Schuljahr, Klasse, Pruefungsfach1, P1NoteSe1, P1NoteSe2, P1NoteSe3, P1NoteSe4, Pruefungsfach2, P2NoteSe1, P2NoteSe2, P2NoteSe3, P2NoteSe4, Pruefungsfach3, P3NoteSe1, P3NoteSe2, P3NoteSe3, P3NoteSe4, Pruefungsfach4, P4NoteSe1, P4NoteSe2, P4NoteSe3, P4NoteSe4, Pruefungsfach5, P5NoteSe1, P5NoteSe2, P5NoteSe3, P5NoteSe4, Wahlpflichtkurs, WahlNoteSe1, WahlNoteSe2, WahlNoteSe3, WahlNoteSe4,     InformationNoteSe1, InformationNoteSe2, InformationNoteSe3, InformationNoteSe4,       PhysikNoteSe1, PhysikNoteSe2, PhysikNoteSe3, PhysikNoteSe4, Fremdsprache, FremdspracheSe1, FremdspracheSe2, FremdspracheSe3,FremdspracheSe4, SportNoteSe1, SportNoteSe2, SportNoteSe3, SportNoteSe4, Unterkurse)
+VALUES ('','Thomas' ,'Berger','2010/2013','BGI1','Wirtschaft','10','5','4','8','Deutsch', '12','10', '11', '1','Englisch', '9','8','13','7','Mathe', '4', '10', '13', '15','BIF','3', '7', '11', '4',   'Werte und Normen', '8', '12','12','6',   '6', '11','15','8',   '8', '12','5','9',     'Spanisch','5', '10','12','6',  '9', '12','10','6',   '5');
