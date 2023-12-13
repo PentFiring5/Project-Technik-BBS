@@ -205,8 +205,9 @@
             $SportDurch = $Sportdurchschnitt/4; //Durchschnitt Sport
 
             
-
-
+            if ($Wahlpflichtkurs==""){
+                $Wahlpflichtkurs = "Wahlpflichtkurs";
+            }
 
 
             //Berechnung Gesammtdurchschnittes aus allen semestern zusammen
