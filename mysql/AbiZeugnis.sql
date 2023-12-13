@@ -6,7 +6,7 @@ CREATE TABLE Schueler(
 	SuSNr INT NOT NULL AUTO_INCREMENT,
 	name1 VARCHAR(30) NOT NULL,
 	Nachname VARCHAR(30) NOT NULL,
-	Schuljahr VARCHAR(4),
+	Schuljahr VARCHAR(10),
 	Klasse VARCHAR(6),
 
 	Pruefungsfach1 VARCHAR(30),

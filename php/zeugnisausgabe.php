@@ -65,7 +65,9 @@
                     }    
                 }
                 else {
-                    echo "Zu Ihrer Eingabe wurde kein Datensatz gefunden.";
+                    //weiterleitung auf eine andere seite dei darstellt das es keinen Eintrag giebt
+                    echo '<meta http-equiv="refresh" content="0; URL=../html/NoEntry.html">';
+                    //echo "Zu Ihrer Eingabe wurde kein Datensatz gefunden.";
                 }    
                 
     
@@ -205,8 +207,9 @@
             $SportDurch = $Sportdurchschnitt/4; //Durchschnitt Sport
 
             
-
-
+            if ($Wahlpflichtkurs==""){
+                $Wahlpflichtkurs = "Wahlpflichtkurs";
+            }
 
 
             //Berechnung Gesammtdurchschnittes aus allen semestern zusammen
@@ -252,7 +255,8 @@
             }
         }
         else {
-            echo "Zu Ihrer Eingabe wurde kein Datensatz gefunden.";
+            
+            echo '<meta http-equiv="refresh" content="0; URL=../html/NoEntry.html">';
         }
         
         mysqli_close ($verbindung);
