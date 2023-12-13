@@ -161,6 +161,8 @@ input[type="reset"]:hover {
     border-radius: 5px;
 }
 
+
+
 /* Spezielle Formatierung für das Prüfungsfach-Auswahlfeld */
 #P1-select, #P2-select, #P3-select, #P4-select, #P5-select, #Schwerpunkt-select, #Semester-select {
     width: 100%;
