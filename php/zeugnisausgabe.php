@@ -1,3 +1,4 @@
+<!-- Seite zum Darstellen eines gefundenen Eintrags + all die berechnungen-->
 <html>
 <head>
 <title>PHP-Skript f&uuml;r eine Suchmaschine</title>
@@ -7,7 +8,7 @@
 <body style="background-image: url('../bilder/background.jpg');">
 
 
-
+    <h2 id="oben"></h2>
     <div id="titel">
 		<h1>Dein Abizeugnis</h1>
 	</div>
@@ -16,6 +17,16 @@
         <a href="../index.html">Abi Zeugnis Speichern</a>
         <a href="../html/AbiSuche.html">Abi Zeugnis Suchen</a>
     </nav>
+
+    <!--Sprungmarken oben-->
+    <h2 style="text-align: center; font-size:15px;">Springe zu:</h2>
+    <div style="text-align: center;  margin-bottom: 6px;">
+    <a style="font-size: 13px; color:aliceblue;" href="#unten">nach unten</a>
+    <a style="font-size: 13px; color:aliceblue;" href="#2 Zeugnis">Semester 1</a>
+    <a style="font-size: 13px; color:aliceblue;" href="#3 Zeugnis">Semester 2</a>
+    <a style="font-size: 13px; color:aliceblue;" href="#4 Zeugnis">Semester 3</a>
+    <a style="font-size: 13px; color:aliceblue;" href="#5 Zeugnis">Semester 4</a>
+    </div>
 
 
     <?php
@@ -436,9 +447,10 @@
     ?>
 
 <!--Abiturzeugnis Ausgabe, alle Noten die hier angezeigt werden sind der berechnete durchschnitt aus allen 4 Semestern zusammen-->
-    <div class="container">
+    <h2 id="1 Zeugnis"></h2>
+    <div class="container" >
     <div class="title">
-        <h2><u>Abi Zeugnis</u></h2>
+        <h2><u>Gesamt Abiturzeugnis</u></h2>
     </div>
     <div class="details-clearfix">
         <div class="student-details">
@@ -570,6 +582,7 @@
 
 
 <!--Zeugnisausgabe Semester 1-->
+<h2 id="2 Zeugnis"></h2>
 <div class="container">
     <div class="title">
         <h2><u>1 Semester</u></h2>
@@ -690,7 +703,8 @@
 
 
 <!--Zeugnisausgabe Semester 2-->
-<div class="container">
+<h2 id="3 Zeugnis"></h2>
+<div class="container" >
     <div class="title">
         <h2><u>2 Semester</u></h2>
     </div>
@@ -807,6 +821,7 @@
 
 
 <!--Zeugnisausgabe Semester 3-->
+<h2 id="4 Zeugnis"></h2>
 <div class="container">
     <div class="title">
         <h2><u>3 Semester</u></h2>
@@ -884,7 +899,7 @@
             <tr>
                 <td>Informationstechnik:</td>
                 <td><?php echo $InformationNoteSe3;?></td>
- 
+
             </tr>
             <tr>
                 <td>Sport:</td>
@@ -923,7 +938,8 @@
 
 
 <!--Zeugnisausgabe Semester 4-->
-<div class="container">
+<h2 id="5 Zeugnis"></h2>
+<div class="container" >
     <div class="title">
         <h2><u>4 Semester</u></h2>
     </div>
@@ -1032,10 +1048,18 @@
         <img src="../bilder/Notentabelle.png" widht="200" height="70" alt="bbslogo2">
     </div>
 </div>
+    
+    <!--Sprungmarken unten-->
+    <h2 style="text-align: center; font-size:15px;">Springe zu:</h2>
+    <div style="text-align: center; margin-top: 6px;">
+    <a style="font-size: 13px; color:aliceblue;" href="#oben">Nach oben</a>
+    <a style="font-size: 13px; color:aliceblue;" href="#1 Zeugnis">Gesamt Abiturzeugnis</a>
+    <a style="font-size: 13px; color:aliceblue;" href="#2 Zeugnis">Semester 1</a>
+    <a style="font-size: 13px; color:aliceblue;" href="#3 Zeugnis">Semester 2</a>
+    <a style="font-size: 13px; color:aliceblue;" href="#4 Zeugnis">Semester 3</a>
+    </div>
 
-
-
-
+    <h2 id="unten"></h2>
     <footer>
             <h4>Präsentiert von Maxi Bergheim und Maxi Kühnlein</h4>
     </footer>
