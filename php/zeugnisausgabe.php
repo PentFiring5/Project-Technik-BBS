@@ -52,24 +52,31 @@
             $Schuljahr = $_POST["Schuljahr"];
             $Klasse = $_POST["Klasse"];
 
+
+            //Bei dieser Schleife wird geprüft ob bei der Serch html was eingegeben wurde wenn nichts bei allen 4 feldern 
+            //steht wird eine andere Seite ausgegeben die sagt das man parameter für die suche eingrbrn musss
             
+            if (($Name=="") && ($Nachname =="") && ($Schuljahr =="") && ($Klasse =="")){
+                echo '<meta http-equiv="refresh" content="0; URL=../html/NoSearchParameters.html">';
+            }
+            else{
             //Der Select Befehl
-            $sqlselect = "Select * From schueler where name1 Like '%$Name%' AND Nachname LIKE '%$Nachname%' and Schuljahr LIKE '%$Schuljahr%' AND Klasse LIKE '%$Klasse%' ";
-            $sqlquery = mysqli_query($verbindung, $sqlselect);//mysql_query () sendet eine einzelne Abfrage an die Datenbank
+                $sqlselect = "Select * From schueler where name1 Like '%$Name%' AND Nachname LIKE '%$Nachname%' and Schuljahr LIKE '%$Schuljahr%' AND Klasse LIKE '%$Klasse%' ";
+                $sqlquery = mysqli_query($verbindung, $sqlselect);//mysql_query () sendet eine einzelne Abfrage an die Datenbank
             
                         
-                if ($sqlquery->num_rows > 0) {
+                    if ($sqlquery->num_rows > 0) {
 
-                    while ($row = mysqli_fetch_assoc($sqlquery)) { //gibt dem gesuchten Parameter als Array zurück, ein Array ist Datentyp mit beliebig vielen Werten.
-                        $daten[] = $row;
+                        while ($row = mysqli_fetch_assoc($sqlquery)) { //gibt dem gesuchten Parameter als Array zurück, ein Array ist Datentyp mit beliebig vielen Werten.
+                            $daten[] = $row;
+                        }    
+                    }
+                    else {
+                        //weiterleitung auf eine andere seite dei darstellt das es keinen Eintrag giebt
+                        echo '<meta http-equiv="refresh" content="0; URL=../html/NoEntry.html">';
+                        //echo "Zu Ihrer Eingabe wurde kein Datensatz gefunden.";
                     }    
-                }
-                else {
-                    //weiterleitung auf eine andere seite dei darstellt das es keinen Eintrag giebt
-                    echo '<meta http-equiv="refresh" content="0; URL=../html/NoEntry.html">';
-                    //echo "Zu Ihrer Eingabe wurde kein Datensatz gefunden.";
-                }    
-                
+            }    
     
         
     
