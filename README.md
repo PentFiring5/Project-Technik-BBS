@@ -1,18 +1,19 @@
 # Project-Technik-BBS
- Website zum Speichern von Abi Zeugnissen in eine Datenbank, der suche nach ihnen und Ausgabe dieser.
- Dieses Projekt wurde als Schulprojekts erstellt
+ Website zum Speichern von Abi Zeugnissen in eine Datenbank, der Suche nach ihnen und der Ausgabe dieser.
  
-
+ <ins>Dieses Projekt wurde als Schulprojekts erstellt und gilt deshalb als fertig gestellt und deshalb Archiviert.</ins>
+ 
+---
  ### Erster schon automatisch erstellter Eintrag, welcher direckt in der Suchmaske gesucht werden kann:
 (Eines dieser Parameter reicht schon um das Abi-Zeugnis für ,,Thomas" zu finden)
  
- - Name: Thomas 
+ - Name:  ***Thomas*** 
  
- - Nachname: Berger
+ - Nachname:  ***Berger***
  
- - Schuljahr: 2010/2013
+ - Schuljahr:  ***2010/2013***
  
- - Klasse: BGI1
+ - Klasse:  ***BGI1***
 
 # Preview:
 
@@ -25,6 +26,3 @@
 ![image](https://github.com/PentFiring5/Project-Technik-BBS/assets/85456087/bd269044-ac7c-415a-97ac-a219eae74811)
 
 
-
-
-Dieses Projekt gilt als Fertig und ist daher Archiviert.
