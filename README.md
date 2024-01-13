@@ -1,5 +1,5 @@
 # Project-Technik-BBS
- Wbsite zum Speichern von Abi Zeugnissen sowie suchen danach und darstellen dieser
+ Website zum Speichern von Abi Zeugnissen sowie die suchen danach und darstellen dieser.
  
  Erster schon automatisch erstellter eintrag:
  
