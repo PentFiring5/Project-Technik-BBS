@@ -1,7 +1,7 @@
 # Project-Technik-BBS
  Website zum Speichern von Abi Zeugnissen in eine Datenbank, der Suche nach ihnen und der Ausgabe dieser.
  
- <ins>Dieses Projekt wurde als Schulprojekts erstellt und gilt deshalb als fertig gestellt und deshalb Archiviert.</ins>
+ <ins>Dieses Projekt wurde als Schulprojekts erstellt und gilt deshalb als fertig gestellt und deshalb auch Archiviert.</ins>
  
 ---
  ### Erster schon automatisch erstellter Eintrag, welcher direckt in der Suchmaske gesucht werden kann:
