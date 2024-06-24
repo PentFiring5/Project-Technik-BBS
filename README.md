@@ -1,5 +1,5 @@
 # Project-Technik-Berufsbildende-Schule
- Website welche als Schulprojekt zusammen mit einem anderen Schulkameraden erstellt wurde, um Abi Zeugniss Noten in einer SQL Datenbank speichern und auf einer anderen Seite nach diesen suchen zu können.
+ Website welche als Schulprojekt zusammen mit einem anderen Schulkameraden erstellt wurde, um Abi Zeugniss Noten in einer SQL Datenbank zu speichern und diese in der Suchmaske (siehe unten) suchen zu können.
  
 ---
  ### Erster schon automatisch erstellter Eintrag, welcher direkt in der Suchmaske gesucht werden kann:
