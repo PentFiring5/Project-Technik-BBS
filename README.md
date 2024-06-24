@@ -1,11 +1,9 @@
 # Project-Technik-BBS
- Website zum Speichern von Abi Zeugnissen in eine Datenbank, der Suche nach ihnen und der Ausgabe dieser.
- 
- <ins>Dieses Projekt wurde als Schulprojekts erstellt und gilt deshalb als fertig gestellt.</ins>
+ Website zum speichern von Abi Zeugnissen in eine Datenbank, der Suche nach ihnen und der Ausgabe dieser.
  
 ---
- ### Erster schon automatisch erstellter Eintrag, welcher direckt in der Suchmaske gesucht werden kann:
-(Eines dieser Parameter reicht schon um das Abi-Zeugnis für ,,Thomas" zu finden)
+ ### Erster schon automatisch erstellter Eintrag, welcher direkt in der Suchmaske gesucht werden kann:
+(Eines dieser Parameter reicht schon aus um das Abi-Zeugnis für ,,Thomas" zu finden)
  
  - Name:  ***Thomas*** 
  
