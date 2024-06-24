@@ -1,5 +1,5 @@
-# Project-Technik-BBS
- Website zum speichern von Abi Zeugnissen in eine Datenbank, der Suche nach ihnen und der Ausgabe dieser.
+# Project-Technik-Berufsbildende-Schule
+ Website welche als Schulprojekt zusammen mit einem anderen Schulkameraden erstellt wurde, um Abi Zeugniss Noten in einer SQL Datenbank speichern und auf einer anderen Seite nach diesen suchen zu können.
  
 ---
  ### Erster schon automatisch erstellter Eintrag, welcher direkt in der Suchmaske gesucht werden kann:
